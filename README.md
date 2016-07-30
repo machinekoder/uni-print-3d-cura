@@ -1,2 +1,3 @@
-# X3GWriter
-X3G output plugin for Cura
+# NGCWriter
+NGC (RS-274 GCode) output plugin for Cura
+including velocity extruding

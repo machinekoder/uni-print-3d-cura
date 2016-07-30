@@ -1,29 +1,32 @@
 # Copyright (c) 2015 Ultimaker B.V.
 # Cura is released under the terms of the AGPLv3 or higher.
 
-from . import X3GWriter
+from . import NGCWriter
 
 from UM.i18n import i18nCatalog
 catalog = i18nCatalog("cura")
 
+
 def getMetaData():
     return {
         "plugin": {
-            "name": "X3G Writer",
-            "author": "Malyan",
+            "name": "NGC Writer",
+            "author": "Strahlex",
             "version": "1.0",
-            "description": catalog.i18nc("X3G Writer Plugin Description", "Writes X3G to a file"),
+            "description": catalog.i18nc("NGC Writer Plugin Description", "Writes RS-274 GCode to a file"),
             "api": 2
         },
 
         "mesh_writer": {
             "output": [{
-                "extension": "x3g",
-                "description": catalog.i18nc("X3G Writer File Description", "X3G File"),
-                "mime_type": "application/x3g"
+                "extension": "ngc",
+                "description": catalog.i18nc("NGC Writer File Description", "RS-274 GCode File"),
+                "mime_type": "text/x-ngc",
+                "mode": NGCWriter.NGCWriter.OutputMode.TextMode
             }]
         }
     }
 
+
 def register(app):
-    return { "mesh_writer": X3GWriter.X3GWriter() }
+    return {"mesh_writer": NGCWriter.NGCWriter()}
