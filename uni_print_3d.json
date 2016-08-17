@@ -1,0 +1,36 @@
+{
+    "id": "uni_print_3d",
+    "version": 1, 
+    "name": "UNI-PRINT-3D",
+    "manufacturer": "TheCoolTool",
+    "author": "Other",
+    "icon": "icon_ultimaker2.png",
+    "platform": "uni_print_3d_platform.stl",
+    "file_formats": "text/x-ngc;text/x-gcode",
+    "inherits": "fdmprinter.json",
+
+    "machine_settings": {
+        "machine_heated_bed": { "default": true },
+        "machine_width": { "default": 186 },
+        "machine_height": { "default": 150 },
+        "machine_depth": { "default": 220 },
+        "machine_center_is_zero": { "default": true },
+        "machine_nozzle_size": { "default": 0.4 },
+        "material_diameter": { "default": 1.75 },
+        "machine_nozzle_heat_up_speed": { "default": 2.0 },
+        "machine_nozzle_cool_down_speed": { "default": 2.0 },
+        "machine_head_shape_min_x": { "default": 75 },
+        "machine_head_shape_min_y": { "default": 18 },
+        "machine_head_shape_max_x": { "default": 18 },
+        "machine_head_shape_max_y": { "default": 35 },
+        "machine_nozzle_gantry_distance": { "default": 55 },
+        "machine_gcode_flavor": { "default": "RepRap (Marlin/Sprinter)" },
+
+        "machine_start_gcode": {
+            "default": "M53; enable feed-hold\nG0 Z2.0; always start from the same height to compensate backlash\nG28; move extruder to 0\nM420 R0.0 E0.0 D0.0 P0.1 ; turn the lights on\nM107; turn off fan\nG64 P0.05 Q0.05; path blending settings\nG23; unretract"
+        },
+        "machine_end_gcode": {
+            "default": "M104 P0 ; turn off hotend\nG0 X-80 Y100; move the extruder out of the way\nM420 R0.0 E0.1 D0.0 P0.6 ; signalize end of print\nM140 P0 ; turn off heatbed"
+        }
+    }
+}
