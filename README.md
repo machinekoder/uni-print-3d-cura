@@ -2,6 +2,7 @@
 This plugin enables to use Cura with Machinekit and velocity
 extrusion. Furthermore, it also adds a machine configuration for the
 [UNI-PRINT-3D 3d printer](https://github.com/thecooltool/UNI-PRINT-3D).
+For more details please take a look at [my blog post](http://machinekoder.com/?p=9).
 
 ### Install
 Use following command to install the files to your Cura installation.
