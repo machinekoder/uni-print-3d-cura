@@ -12,7 +12,7 @@
     "machine_settings": {
         "machine_heated_bed": { "default": true },
         "machine_width": { "default": 186 },
-        "machine_height": { "default": 150 },
+        "machine_height": { "default": 230 },
         "machine_depth": { "default": 220 },
         "machine_center_is_zero": { "default": true },
         "machine_nozzle_size": { "default": 0.4 },
