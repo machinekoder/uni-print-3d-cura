@@ -349,7 +349,7 @@ class TweakAtZ(Script):
             "extruderOne": "M104 S%f T0\n",
             "extruderTwo": "M104 S%f T1\n",
             "fanSpeed": "M106 S%d\n",
-            "custom": "M140 S0\nM64 P16 ;%s\n"}
+            "custom": "M64 P16 ;%s\n"}
         target_values = {"speed": self.getSettingValueByKey("e2_speed"),
              "flowrate": self.getSettingValueByKey("g2_flowrate"),
              "flowrateOne": self.getSettingValueByKey("g4_flowrateOne"),
