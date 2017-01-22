@@ -6,7 +6,7 @@ install:
 	cp $(PRINTER_NAME)_platform.stl $(CURA_PATH)/resources/meshes/
 	rm -rf $(CURA_PATH)/plugins/plugins/NGCWriter
 	cp -r NGCWriter $(CURA_PATH)/plugins/plugins
-	cp TweakAtZ.py $(CURA_PATH)/lib/cura/plugins/PostProcessingPlugin/scripts/TweakAtZ.py
+	cp SimpleTweak.py $(CURA_PATH)/lib/cura/plugins/PostProcessingPlugin/scripts/SimpleTweak.py
 
 mime:
 	cp machinekit.xml /usr/share/mime/packages/
