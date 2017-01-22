@@ -16,7 +16,7 @@ On **Windows** please copy the corresponding files to your Cura
 installation:
 
 ```
-uni_print_3d.json -> <cura_path>/share/cura/resources/machines
+uni_print_3d.def.json -> <cura_path>/share/cura/resources/definitions/
 uni_print_3d_platform.stl <cura_path>/share/cura/resources/meshes/
 NGCWriter -> <cura_path>/lib/cura/plugins/
 ```
