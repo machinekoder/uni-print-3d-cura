@@ -16,9 +16,9 @@ On **Windows** please copy the corresponding files to your Cura
 installation:
 
 ```
-uni_print_3d.def.json -> <cura_path>/share/cura/resources/definitions/
-uni_print_3d_platform.stl <cura_path>/share/cura/resources/meshes/
-NGCWriter -> <cura_path>/lib/cura/plugins/
+uni_print_3d.def.json -> <cura_path>/resources/definitions/
+uni_print_3d_platform.stl <cura_path>/resources/meshes/
+NGCWriter -> <cura_path>/plugins/
 ```
 
 On Linux you can optionally install the Machinekit MIME type by running:
