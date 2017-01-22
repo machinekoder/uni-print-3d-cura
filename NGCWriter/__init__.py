@@ -10,17 +10,17 @@ catalog = i18nCatalog("cura")
 def getMetaData():
     return {
         "plugin": {
-            "name": "NGC Writer",
-            "author": "Strahlex",
+            "name": catalog.i18nc("@label", "NGC Writer"),
+            "author": "Machine Koder",
             "version": "1.0",
             "description": catalog.i18nc("NGC Writer Plugin Description", "Writes RS-274 GCode to a file"),
-            "api": 2
+            "api": 3
         },
 
         "mesh_writer": {
             "output": [{
                 "extension": "ngc",
-                "description": catalog.i18nc("NGC Writer File Description", "RS-274 GCode File"),
+                "description": catalog.i18nc("@item:inlistbox", "RS-274 GCode File"),
                 "mime_type": "text/x-ngc",
                 "mode": NGCWriter.NGCWriter.OutputMode.TextMode
             }]

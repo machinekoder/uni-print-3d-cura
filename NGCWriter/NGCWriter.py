@@ -13,7 +13,7 @@ from converter.ngc2ve import Ngc2Ve
 
 
 class NGCWriter(MeshWriter):
-    version = 1
+    version = 3
 
     def __init__(self):
         super().__init__()
