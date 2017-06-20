@@ -33,9 +33,10 @@ output_file = open(output_name, 'wt')
 # TODO: add prefix
 
 gcodeConverter = GCode2Ngc()
-veConverter = Ngc2Ve()
 gcodeConverter.process(gcode_list)
-veConverter.process(gcode_list)
+if not args.no_velocity_extrusion:
+    veConverter = Ngc2Ve()
+    veConverter.process(gcode_list)
 
 for gcode in gcode_list:
     output_file.write(gcode)
