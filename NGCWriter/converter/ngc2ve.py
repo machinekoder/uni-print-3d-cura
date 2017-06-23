@@ -203,7 +203,7 @@ class Ngc2Ve():
             elif move:
                 if not self.retracted:  # handle moves without retraction
                     self.simplifyCross(0.0)
-                    self.simplifyLine(G, [x, y, z, f, None, None], comment)
+                self.simplifyLine(G, [x, y, z, f, None, None], comment)
             elif dead:
                 pass  # pass dead moves
             else:
