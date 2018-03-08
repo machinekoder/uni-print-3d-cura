@@ -1,0 +1,8 @@
+{
+    "name": "NGC Writer",
+    "author": "Machine Koder",
+    "version": "1.0",
+    "description": "Writes RS-274 GCode to a file",
+    "api": 4,
+    "i18n-catalog": "cura"
+}
