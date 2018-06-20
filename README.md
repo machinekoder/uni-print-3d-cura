@@ -8,6 +8,8 @@ For more details please take a look at [my blog post](http://machinekoder.com/?p
 Use following command to install the files to your Cura installation.
 The make argument `CURA_PATH` specifies the path of your cura installation.
 
+Additionally make sure to install the **NGCWriter** plugin via the Cura plugin repository from within Cura (*Plugins > Browse Plugins...*).
+
 ``` bash
 sudo make install CURA_PATH=/opt/cura
 ```
@@ -18,7 +20,6 @@ installation:
 ```
 uni_print_3d.def.json -> <cura_path>/resources/definitions/
 uni_print_3d_platform.stl <cura_path>/resources/meshes/
-NGCWriter -> <cura_path>/plugins/
 ```
 
 On Linux you can optionally install the Machinekit MIME type by running:
